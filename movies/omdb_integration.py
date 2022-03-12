@@ -10,6 +10,7 @@ from omdb.django_client import get_client_from_settings
 logger = logging.getLogger(__name__)
 
 
+
 def get_or_create_genres(genre_names):
     for genre_name in genre_names:
         genre, created = Genre.objects.get_or_create(name=genre_name)
